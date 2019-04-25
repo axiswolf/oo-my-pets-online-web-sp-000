@@ -18,7 +18,7 @@ class Owner
     # knows about its cats
     @pets[:cats] << Cat.new(cat_name)
   end
-  def buy_dogs(dog_name)
+  def buy_dog(dog_name)
     # buy a dog taht is an instance of that dog class
     # knows abouts its dogs
     @pets[:dogs] << Dog.new(dog_name)
