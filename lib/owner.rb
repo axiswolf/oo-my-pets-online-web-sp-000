@@ -29,7 +29,7 @@ class Owner
   end
   def walk_dogs
     @pets.collect do |species, mood|
-      if species == :dogs
+      if species == [:dogs]
         mood.each do |dog|
           dog.mood = "happy"
         end
