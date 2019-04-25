@@ -11,17 +11,17 @@ class Owner
   def buy_fish(fish_name)
     # can buy a fish that is an instance of a fish class
     # knows about its fishes
-    @pets[:fishes << Fish.new(fish_name)]
+    @pets[:fishes] << Fish.new(fish_name)
   end
   def buy_cat(cat_name)
     # buy a cat that is an instance of the cat class
     # knows about its cats
-    @pets[:cats << Cat.new(cat_name)]
+    @pets[:cats] << Cat.new(cat_name)
   end
   def buy_dogs(dog_name)
     # buy a dog taht is an instance of that dog class
     # knows abouts its dogs
-    @pets[:dogs << Dog.new(dog_name)]
+    @pets[:dogs] << Dog.new(dog_name)
   end
   def say_species
     # can say its species
